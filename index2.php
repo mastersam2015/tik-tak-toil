@@ -176,8 +176,34 @@ while (!feof($fp)){
 $str2 = fgets($fp);  
   }
   
-  
-  echo "<img src=\"krzyzyk.jpg\" width=\"30\">".$str ." : ".$str2."<img src=\"kolko.jpg\" width=\"30\">";
-  
-  
+  echo "<img src=\"krzyzyk.jpg\" width=\"30\"><span id='playerp1'></span> : <span id='playerp2'></span><img src=\"kolko.jpg\" width=\"30\">";
 ?>
+<script>
+
+function reflesh(){
+	
+	
+						 $.get( "p1.txt", function( data ) {
+
+
+  $("#playerp1").html(data);
+
+}); 
+	
+	
+							 $.get( "p2.txt", function( data ) {
+
+
+  $("#playerp2").html(data);
+
+}); 
+	
+}
+
+
+
+setInterval(reflesh, 1000);
+
+
+
+</script>
