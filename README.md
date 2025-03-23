@@ -1,1 +1,1 @@
-![Alt text](hhttps://game.vot.pl/git/kol.png)
+![Alt text](https://game.vot.pl/git/kol.png)
