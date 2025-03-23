@@ -1,0 +1,1 @@
+![Alt text](hhttps://game.vot.pl/git/kol.png)
